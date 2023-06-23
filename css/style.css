@@ -43,8 +43,18 @@ button.active {
 .filterable_cards {
 	display: flex;
 	margin-top: 25px;
-	gap: 20px;
+	gap: 25px;
 	flex-wrap: wrap;
+	cursor: pointer;
+}
+
+.filterable_cards:hover {
+	color: #4070f4;
+}
+
+.filterable_cards:active {
+	top: 5px;
+	color: #333;
 }
 
 .card {
@@ -54,6 +64,10 @@ button.active {
 	padding: 3px;
 	border-radius: 8px;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.card.hide {
+	display: none;
 }
 
 .card img {
